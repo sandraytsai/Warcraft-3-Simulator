@@ -2,8 +2,8 @@ require_relative 'unit'
 
 class Peasant < Unit
 
-  def initialize(health_points=35, attack_power=0)
-    super(health_points, attack_power)
+  def initialize
+    super(35, 0)
   end
-  
+
 end 

@@ -2,8 +2,8 @@ require_relative 'unit'
 
 class SiegeEngine < Unit 
 
-  def initialize(health_points=400, attack_power=50)
-     super(health_points, attack_power)
+  def initialize
+     super(400, 50)
   end  
 
   def attack!(enemy)

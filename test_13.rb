@@ -16,20 +16,20 @@ describe Barracks do
     end
 
     it "returns false when there isn't enough gold" do 
-      @barracks = Barracks.new(0)
-      #expect(@barracks).to receive(:gold).and_return(199)
+      # @barracks = Barracks.new
+      expect(@barracks).to receive(:gold).and_return(199)
       expect(@barracks.can_build_siege_engine?).to be_falsey
     end 
 
     it "returns false when there isn't enough food" do 
-      @barracks = Barracks.new(1000,0,500,500)
-      # expect(@barracks).to receive(:food).and_return(2)
+      # @barracks = Barracks.new(1000,0,500,500)
+      expect(@barracks).to receive(:food).and_return(2)
       expect(@barracks.can_build_siege_engine?).to be_falsey
     end 
 
     it "returns false when there isn't enough lumber" do 
-      @barracks = Barracks.new(1000,80,500,0)
-      # expect(@barracks).to receive(:lumber).and_return(59)
+      # @barracks = Barracks.new(1000,80,500,0)
+      expect(@barracks).to receive(:lumber).and_return(59)
       expect(@barracks.can_build_siege_engine?).to be_falsey
     end 
   end 
