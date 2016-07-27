@@ -20,3 +20,4 @@ class Footman < Unit
 
 
 end
+

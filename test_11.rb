@@ -1,6 +1,7 @@
 require_relative 'spec_helper'
 
 describe Barracks do 
+
   before :each do
     @barrack = Barracks.new
   end
@@ -12,6 +13,7 @@ describe Barracks do
 end 
 
 describe Footman do
+
   before :each do
     @footman = Footman.new
     @barrack = Barracks.new
@@ -21,6 +23,5 @@ describe Footman do
     @footman.attack!(@barrack)
     expect(@barrack.health_points).to eq(495)
   end 
-
-
+  
 end 

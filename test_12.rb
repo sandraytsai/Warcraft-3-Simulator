@@ -1,6 +1,7 @@
 require_relative 'spec_helper'
 
 describe Unit do
+
   before :each do
     @unit_alive = Unit.new(5,5)
     @unit_dead = Unit.new(0,5)
@@ -23,4 +24,5 @@ describe Unit do
       expect(@unit_alive.attack!(@unit_dead)).to be_nil
     end
   end
+  
 end 

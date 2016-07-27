@@ -1,5 +1,6 @@
 class Barracks 
   attr_reader :gold, :food, :health_points, :lumber
+
   def initialize(gold = 1000, food = 80, health_points = 500, lumber = 500)
     @gold = gold 
     @food = food 
@@ -36,7 +37,7 @@ class Barracks
   end
 
   def can_build_siege_engine?
-    gold >= 200 && food >= 3 && lumber >= 60
+    @gold >= 200 && @food >= 3 && @lumber >= 60
   end 
 
   def build_siege_engine
@@ -55,7 +56,7 @@ class Barracks
   end 
 
   def dead?
-    health_points <= 0
+    @health_points <= 0
   end 
 
 end
